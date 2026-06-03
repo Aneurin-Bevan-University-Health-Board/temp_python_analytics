@@ -10,6 +10,9 @@ pandas>=2.0.0
 numpy>=1.26.0
 pyarrow>=14.0.0
 
+# SPC — install via: PIP_CONFIG_FILE=pip.conf pip install -r requirements.txt
+abspc
+
 # Dev
 jupyterlab>=4.0.0
 black>=23.0.0
