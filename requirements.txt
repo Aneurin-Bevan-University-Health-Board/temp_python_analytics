@@ -14,7 +14,9 @@ pyarrow>=14.0.0
 abspc
 
 # Dev
+streamlit>=1.32.0
 jupyterlab>=4.0.0
+ipykernel>=6.29.0
 black>=23.0.0
 flake8>=6.0.0
 pytest>=7.4.0
