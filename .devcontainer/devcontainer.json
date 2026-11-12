@@ -1,11 +1,9 @@
 {
   "name": "Python Analytics",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
-    "ghcr.io/devcontainers/features/google-cloud-cli:1": {
-      "version": "latest",
-      "installGkeGcloudAuthPlugin": false
-    },
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.11"
     }
@@ -29,7 +27,7 @@
       }
     }
   },
-  "forwardPorts": [8888],
+  "forwardPorts": [8888, 8501],
   "remoteEnv": {
     "PYTHONPATH": "${containerWorkspaceFolder}/src"
   }
